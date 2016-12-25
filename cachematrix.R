@@ -40,7 +40,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'cachemean <- function(x, ...) {
-    invert <- x$makeCacheMatrix()
+    invert <- x$getInvert()
     #We check wether there is already a cached object anreturn it, otherwise, we create it
     if(!is.null(invert)) {
         message("getting cached data")
